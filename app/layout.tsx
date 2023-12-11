@@ -7,9 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "IICT 2023-2",
   description: "정보문화기술입문 2023년 2학기",
-  openGraph: {
-    images: ["/logo.png"],
-  },
 };
 
 export default function RootLayout({

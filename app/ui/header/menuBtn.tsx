@@ -16,7 +16,7 @@ export default function MenuBtn({
   };
   return (
     <div
-      className={`flex-1 py-4 mx-0 lg:mx-12 my-4 flex justify-center border border-white cursor-pointer ${
+      className={`lg:flex-1 flex-grow lg:flex-grow:0  py-4 mx-0 lg:mx-12 my-4 flex justify-center border border-white cursor-pointer ${
         label === currentMenu ? "striped-div-selected" : ""
       }`}
       onClick={handleOnClick}
