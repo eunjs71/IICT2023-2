@@ -17,11 +17,52 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+.striped-div-selected {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #aaa 10px,
+    #aaa 11px
+  );
+}
+
+.striped-div {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #ccc 10px,
+    #ccc 11px
+  );
+}
+
+.background-cloud {
+  background-color: #a8b7d8;
+}
+.background-cloud-selected {
+  background-color: #95acd9;
+}
+
+.ts-red {
+  color: white;
+  --tw-drop-shadow: drop-shadow(0 1px 5px rgba(184, 90, 57, 1));
+}
+
+.ts-yellow {
+  color: white;
+  --tw-drop-shadow: drop-shadow(0 1px 5px rgba(233, 205, 105, 1));
+}
+
+.ts-green {
+  color: white;
+  --tw-drop-shadow: drop-shadow(0 1px 5px rgba(101, 116, 61, 1));
 }
