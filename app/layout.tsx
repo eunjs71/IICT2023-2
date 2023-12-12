@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "IICT 2023-2",
   description: "정보문화기술입문 2023년 2학기",
+  metadataBase: new URL("https://iict-2023-2.vercel.app/"),
 };
 
 export default function RootLayout({
