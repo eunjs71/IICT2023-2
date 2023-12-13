@@ -3,22 +3,26 @@
 import { useState } from "react";
 import MenuBtn from "./menuBtn";
 import { mPlusRounded1C } from "../fonts";
+import { usePathname } from "next/navigation";
 
-export default function Header({
-  currentMenu,
-  setcurrentmenu,
-}: {
-  currentMenu: string;
-  setcurrentmenu: any;
-}) {
+export default function Header() {
+  const pathname = usePathname();
+  const getCurrentMenu = () => {
+    if (pathname == "/") return "HOME";
+    if (pathname == "/qna") return "Q&A";
+    if (pathname == "/exhibition") return "EXHIBITION";
+    if (pathname == "/archiving") return "ARCHIVING";
+    return "HOME";
+  };
   const [hovered, sethovered] = useState(false);
+  const [currentMenu, setcurrentmenu] = useState<string>(getCurrentMenu());
   const menues = ["HOME", "Q&A", "EXHIBITION", "ARCHIVING"];
 
   const drawDCL = (e: React.MouseEvent<HTMLElement>) => {
     let div = e.target as HTMLDivElement;
     // div.style.border = "1px solid grey";
     if (currentMenu == "EXHIBITION") {
-      div.classList.add("striped-div-blue");
+      div.classList.add("striped-div");
     } else {
       div.classList.add("striped-div");
     }
@@ -27,7 +31,7 @@ export default function Header({
     let div = e.target as HTMLDivElement;
     // div.style.border = "1px solid white";
     if (currentMenu == "EXHIBITION") {
-      div.classList.remove("striped-div-blue");
+      div.classList.remove("striped-div");
     } else {
       div.classList.remove("striped-div");
     }
