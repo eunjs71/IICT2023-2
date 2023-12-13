@@ -102,19 +102,19 @@ export default function Page() {
         이후에도 변경된 사항이 있을 때마다, GitHub Desktop에서 commit &gt;
         push를 통해 github.com에 있는 Repository에 변경 사항을 적용할 수
         있습니다.
+        <Blank />
+        <div>
+          <ExternalLink
+            linkText="정보문화기술입문 2023년 2학기 Repository ☆ Star 누르러 가기 "
+            url="https://github.com/eunjs71/IICT2023-2"
+          />
+        </div>
+        <Blank />
+        <Blank />
+        <Blank />
+        <Blank />
+        <Blank />
       </div>
-      <Blank />
-      <div>
-        <ExternalLink
-          linkText="정보문화기술입문 2023년 2학기 Repository ☆ Star 누르러 가기 "
-          url="https://github.com/eunjs71/IICT2023-2"
-        />
-      </div>
-      <Blank />
-      <Blank />
-      <Blank />
-      <Blank />
-      <Blank />
     </>
   );
 }

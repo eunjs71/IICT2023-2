@@ -9,9 +9,9 @@ export default function Header() {
   const pathname = usePathname();
   const getCurrentMenu = () => {
     if (pathname == "/") return "HOME";
-    if (pathname == "/qna") return "Q&A";
-    if (pathname == "/exhibition") return "EXHIBITION";
-    if (pathname == "/archiving") return "ARCHIVING";
+    if (pathname.includes("/qna")) return "Q&A";
+    if (pathname.includes("/exhibition")) return "EXHIBITION";
+    if (pathname.includes("/archiving")) return "ARCHIVING";
     return "HOME";
   };
   const [hovered, sethovered] = useState(false);
