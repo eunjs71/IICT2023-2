@@ -17,13 +17,16 @@
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  background-color: white;
+  /* transition: background-color 1000ms ease-in-out; */
+}
+
+.blueback {
+  /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#afc3e6, #506aad);
+  box-sizing: border-box;
 }
 .striped-div-selected {
   background: repeating-linear-gradient(
@@ -34,7 +37,25 @@ body {
     #aaa 11px
   );
 }
+.striped-div-selected-blue {
+  background: repeating-linear-gradient(
+    -45deg,
+    #7c97c6,
+    #7c97c6 10px,
+    #ffffff 10px,
+    #ffffff 11px
+  );
+}
 
+.striped-div-blue {
+  background: repeating-linear-gradient(
+    -45deg,
+    #7c97c6,
+    #7c97c6 10px,
+    #ffffff 10px,
+    #ffffff 11px
+  );
+}
 .striped-div {
   background: repeating-linear-gradient(
     -45deg,
@@ -43,6 +64,10 @@ body {
     #ccc 10px,
     #ccc 11px
   );
+}
+
+.bluegrad {
+  background-image: linear-gradient(#7c96c6, #506aad);
 }
 
 .background-cloud {

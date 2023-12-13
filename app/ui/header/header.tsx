@@ -17,12 +17,20 @@ export default function Header({
   const drawDCL = (e: React.MouseEvent<HTMLElement>) => {
     let div = e.target as HTMLDivElement;
     // div.style.border = "1px solid grey";
-    div.classList.add("striped-div");
+    if (currentMenu == "EXHIBITION") {
+      div.classList.add("striped-div-blue");
+    } else {
+      div.classList.add("striped-div");
+    }
   };
   const eraseDCL = (e: React.MouseEvent<HTMLElement>) => {
     let div = e.target as HTMLDivElement;
     // div.style.border = "1px solid white";
-    div.classList.remove("striped-div");
+    if (currentMenu == "EXHIBITION") {
+      div.classList.remove("striped-div-blue");
+    } else {
+      div.classList.remove("striped-div");
+    }
   };
 
   return (

@@ -1,4 +1,5 @@
 import Blank from "../components/blank";
+import ImageBox from "../components/imagebox";
 
 export default function Exhibition() {
   return (
@@ -7,7 +8,7 @@ export default function Exhibition() {
       <div>과제전</div>
       <Blank />
       <Blank />
-      <div>&lt; !! 과제전 포스터 들어갈 자리 !! &gt;</div>
+      <ImageBox src="/poster.jpeg" alt="poster" />
       <Blank />
       <Blank />
       <div>과제전 준비</div>
