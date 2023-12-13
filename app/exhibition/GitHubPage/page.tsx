@@ -106,7 +106,7 @@ export default function Page() {
       <Blank />
       <div>
         <ExternalLink
-          linkText="정보문화기술입문 2023년 2학기 Repository Star 누르러 가기 "
+          linkText="정보문화기술입문 2023년 2학기 Repository ☆ Star 누르러 가기 "
           url="https://github.com/eunjs71/IICT2023-2"
         />
       </div>
