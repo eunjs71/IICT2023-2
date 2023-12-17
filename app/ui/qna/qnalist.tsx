@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Blank from "../components/blank";
 import ExternalLink from "../components/externallink";
 import { pastQnaList_2023_1, pastQnaList_2022_2 } from "./qnapastdata";
@@ -7,7 +8,15 @@ export default function QnaList() {
     <>
       <Blank />
       <Blank />
-      <div>&lt; !! 이번 학기 질의응답 들어갈 자리 !! &gt;</div>
+      <div>I조</div>
+      <Link href="/qna/QRcode1">
+        <div>
+          -{" "}
+          <span className="text-blue-500 cursor-pointer">
+            이미지 QRcode로 보여주기 - 1. 이미지 supabase에 업로드
+          </span>
+        </div>
+      </Link>
       <Blank />
       <Blank />
       <div>2023년 1학기</div>
