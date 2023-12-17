@@ -13,7 +13,15 @@ export default function QnaList() {
         <div>
           -{" "}
           <span className="text-blue-500 cursor-pointer">
-            이미지 QRcode로 보여주기 - 1. 이미지 supabase에 업로드
+            이미지 QR코드로 보여주기 - 1. 이미지 supabase에 업로드
+          </span>
+        </div>
+      </Link>
+      <Link href="/qna/QRcode2">
+        <div>
+          -{" "}
+          <span className="text-blue-500 cursor-pointer">
+            이미지 QR코드로 보여주기 - 2. 이미지 링크 QR코드로 변환하기
           </span>
         </div>
       </Link>

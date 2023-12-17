@@ -8,10 +8,10 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col">
-        <div>이미지 QRcode로 보여주기 - 1. 이미지 supabase에 업로드</div>
+        <div>이미지 QR코드로 보여주기 - 1. 이미지 supabase에 업로드</div>
         <Blank />
         <div>
-          이미지를 QR 코드로 보여주기 위해서는 먼저 1. 이미지를 supabase의
+          이미지를 QR코드로 보여주기 위해서는 먼저 1. 이미지를 supabase의
           저장소에 업로드하고, 2. 이미지의 링크를 QR 코드로 변환하여 보여줘야
           합니다. 먼저 supabase에 가입하여 저장소를 만들고, 이미지를 업로드
           해보겠습니다.
